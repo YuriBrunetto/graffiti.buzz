@@ -1,1 +1,30 @@
-body { font-family:"brandon-grotesque",sans-serif; font-style:normal; font-weight:300; }
+* { text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased !important; -moz-webkit-font-smoothing:antialiased !important; }
+body { height:100vh; background:url(../img/background.jpg) no-repeat center; background-size:cover; font-family:"brandon-grotesque",sans-serif; font-style:normal; font-weight:300; color:#fff; }
+
+a { color:#fff; font-weight:600; text-decoration:none; border-bottom:2px solid rgba(255,255,255,0.2);     transition:border-color 400ms; }
+a:hover { border-color:#AD1F59; }
+
+p { font-size:32px; text-align:center; line-height:120%; margin:1.5em 0 0 0; }
+@media all and (max-width:768px) {
+    p { font-size:24px; }
+}
+@media all and (max-width:480px) {
+    p { font-size:20px; padding:0 10%; }
+}
+
+strong { font-weight:600; }
+
+.main { height:100vh; max-width:960px; margin:0 auto; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; display:flex; flex-direction:column; justify-content:center; }
+.main-logo { width:286px; height:98px; margin:0 auto; }
+@media all and (max-width:480px) {
+    .main-logo { width:240px; height:82px; }
+}
+@media all and (max-width:640px) and (orientation:landscape) {
+    body { height:auto; }
+    .main { height:auto; padding:10% 0; }
+}
+
+/* -- Extras -- */
+
+.color-purple { color:#AD1F59; }
+.img-retina { height:100%; }
